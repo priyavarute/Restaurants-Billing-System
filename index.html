@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create one billing program for restaurants in JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="top">
+            <h1 style="text-align: center; margin-bottom: 30px;">Restaurants Billing System</h1>
+            <label for="Products">Choose a product:</label>
+            <select name="Products" id="Products" fdprocessedid="0a2yea">
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Sandwich">Sandwich</option>
+                <option value="Coffee">Coffee</option>
+            </select>
+            <br><br>
+            <label for="product-price">Product Price :</label>
+            <input type="number" id="product-price" placeholder="Enter the product price"
+                fdprocessedid="jjz5ll"><br><br>
+            <label for="product-quantity">Product Quantity :</label>
+            <input type="number" id="product-quantity" placeholder="Enter the product quantity"
+                fdprocessedid="fyrvou"><br><br>
+            <button onclick="addProduct()" fdprocessedid="izbksc" id="product">Add Product</button>
+        </div>
+        <br>
+
+        <div id="bill">
+            <h2>Bill Details</h2><br>
+            <p>
+                <strong>Subtotal:</strong><i> ₹</i>&nbsp;
+                <span id="subtotal">200.00</span>
+            </p>
+            <p>
+                <strong>Tax (7%):</strong><i> ₹</i>&nbsp;&nbsp;<span id="tax">14.00</span>
+            </p>
+            <p>
+                <strong>Service Charge (5%):</strong><i> ₹</i>&nbsp;&nbsp;<span id="service-charge">10.00</span>
+            </p>
+            <p>
+                <strong>Total:</strong><i> ₹</i>&nbsp;&nbsp;<span id="total">224.00</span>
+            </p>
+        </div>
+        <br>
+        <div class="sales">
+            <h2>Daily sales reports</h2>
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Price</th>
+                        <th>Product Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Burger</td>
+                        <td>100.00</td>
+                        <td>2</td>
+                        <td>200.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>

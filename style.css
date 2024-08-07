@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table {
+  width: 90%;
+  margin-top: 20px;
+  text-align: center;
+}
+section{
+    height: 700px;
+    width: 600px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 50px 300px;
+    
+}
+.top{
+    padding-left: 50px;
+}
+#product{
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+#bill{
+    /* border: 1px solid red; */
+    margin-left: 50px;
+}
+.sales{
+    margin-left: 50px;
+}
